@@ -1,7 +1,5 @@
-// src/components/LoginPage.js
 
 import React, { useState } from "react";
-// import '../styles/index.css'; // Import Tailwind CSS
 
 export const Login = ({ setLoggedIn }) => {
   const [username, setUsername] = useState("");

@@ -5,7 +5,6 @@ import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-alpine.css";
 
 const Dashboard = ({ missionsData }) => {
-  // Define columns for AG-Grid
   const columns = [
     { headerName: "Mission", field: "mission" },
     { headerName: "Company", field: "company" },
@@ -17,7 +16,6 @@ const Dashboard = ({ missionsData }) => {
     { headerName: "Successful", field: "successful" }
   ];
 
-  // Data for Recharts pie chart
   const successfulMissionsCount = missionsData.filter(mission => mission?.successful)?.length;
   const unsuccessfulMissionsCount = missionsData?.length - successfulMissionsCount;
   const pieChartData = [
