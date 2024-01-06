@@ -62,7 +62,7 @@ const Dashboard = ({ missionsData }) => {
             outerRadius={120}
             fill="#8884d8"
             label={({ name, percent }) =>
-              `${name} ${(percent * 100).toFixed(2)}%`
+              `${name} (${(percent * 100).toFixed(2)}%)`
             }
           >
             <Cell fill="#1b0fc4" />
