@@ -25,7 +25,7 @@ const Dashboard = ({ missionsData }) => {
 
   return (
     <div className="flex items-center justify-between w-full p-5">
-      <div className="ag-theme-alpine mb-5 w-1/2" style={{ height: '400px' }}>
+      <div className="ag-theme-alpine mb-5 w-1/2" style={{ height: '500px' }}>
         <AgGridReact columnDefs={columns} rowData={missionsData} />
       </div>
       <div style={{ width: "50%", padding: "20px" }} className="flex flex-col gap-5 w-1/2 p-5 items-center">
