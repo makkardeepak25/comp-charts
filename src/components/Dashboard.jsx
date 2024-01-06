@@ -30,8 +30,8 @@ const Dashboard = ({ missionsData }) => {
       </div>
       <div style={{ width: "50%", padding: "20px" }} className="flex flex-col gap-5 w-1/2 p-5 items-center">
         <h2 className="font-bold text-center ">Missions Success/Failure Ratio</h2>
-        <PieChart width={400} height={300}>
-          <Pie dataKey="value" data={pieChartData} cx={200} cy={150} outerRadius={80} fill="#494866" label>
+        <PieChart width={400} height={400}>
+          <Pie dataKey="value" data={pieChartData} cx={200} cy={150} outerRadius={150} fill="#494866" label>
             <Cell fill="#1b0fc4" />
             <Cell fill="#ff2828" />
             <Legend />
